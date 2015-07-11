@@ -1,0 +1,2 @@
+module ExmedicosHelper
+end

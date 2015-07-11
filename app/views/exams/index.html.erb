@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Exams</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Paciente</th>
+      <th>Date</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exams.each do |exam| %>
+      <tr>
+        <td><%= link_to exam.paciente.name_with_initial, exam.paciente %></td>
+        <td><%= exam.date %></td>
+        <td><%= exam.status %></td>
+        <td><%= link_to 'Show', paciente_exam_path(@paciente,exam) %></td>
+        <td><%= link_to 'Edit', edit_paciente_exam_path(@paciente,exam) %></td>
+        <td><%= link_to 'Destroy', paciente_exam_path(@paciente,exam), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Examen Medico', edit_paciente_exam_exmedico_path(@paciente,exam,exam.exmedico) %>
+        <td><%= link_to 'Examen Fonoaudiologico', edit_paciente_exam_exfono_path(@paciente,exam,exam.exfono) %>
+        <td><%= link_to 'Examen Optometra', edit_paciente_exam_exopto_path(@paciente,exam,exam.exopto) %>
+            <td><%= link_to 'Examen Psicologico', edit_paciente_exam_expsico_path(@paciente,exam,exam.expsico) %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exam', new_paciente_exam_path(@paciente) %> 
+
+<%= link_to 'back', pacientes_path %> 

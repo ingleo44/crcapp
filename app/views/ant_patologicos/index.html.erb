@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ant Patologicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ant_patologicos.each do |ant_patologico| %>
+      <tr>
+        <td><%= ant_patologico.name %></td>
+        <td><%= link_to 'Show', ant_patologico %></td>
+        <td><%= link_to 'Edit', edit_ant_patologico_path(ant_patologico) %></td>
+        <td><%= link_to 'Destroy', ant_patologico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ant patologico', new_ant_patologico_path %>

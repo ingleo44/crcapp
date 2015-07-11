@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  paciente_id: 1
+  date: 2015-07-08 09:21:11
+  status: MyString
+
+two:
+  paciente_id: 1
+  date: 2015-07-08 09:21:11
+  status: MyString

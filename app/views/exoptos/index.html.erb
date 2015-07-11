@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Exoptos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Exam</th>
+      <th>Status</th>
+      <th>Optq01</th>
+      <th>Optq02</th>
+      <th>Optq03</th>
+      <th>Optq04</th>
+      <th>Optq05</th>
+      <th>Optq06</th>
+      <th>Optq07</th>
+      <th>Optq08</th>
+      <th>Optq09</th>
+      <th>Optq10</th>
+      <th>Optq11</th>
+      <th>Optq12</th>
+      <th>Optq13</th>
+      <th>Optq14</th>
+      <th>Optq15</th>
+      <th>Optq16</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exoptos.each do |exopto| %>
+      <tr>
+        <td><%= exopto.exam_id %></td>
+        <td><%= exopto.status %></td>
+        <td><%= exopto.optq01 %></td>
+        <td><%= exopto.optq02 %></td>
+        <td><%= exopto.optq03 %></td>
+        <td><%= exopto.optq04 %></td>
+        <td><%= exopto.optq05 %></td>
+        <td><%= exopto.optq06 %></td>
+        <td><%= exopto.optq07 %></td>
+        <td><%= exopto.optq08 %></td>
+        <td><%= exopto.optq09 %></td>
+        <td><%= exopto.optq10 %></td>
+        <td><%= exopto.optq11 %></td>
+        <td><%= exopto.optq12 %></td>
+        <td><%= exopto.optq13 %></td>
+        <td><%= exopto.optq14 %></td>
+        <td><%= exopto.optq15 %></td>
+        <td><%= exopto.optq16 %></td>
+        <td><%= link_to 'Show', exopto %></td>
+        <td><%= link_to 'Edit', edit_exopto_path(exopto) %></td>
+        <td><%= link_to 'Destroy', exopto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exopto', new_exopto_path %>

@@ -1,0 +1,68 @@
+
+
+<%= form_for(@paciente) do |f| %>
+  <% if @paciente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@paciente.errors.count, "error") %> prohibited this paciente from being saved:</h2>
+
+      <ul>
+      <% @paciente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<input type="file" accept="image/*;capture=camera">
+
+<div class="field">
+    <%= f.label :cedula %><br>
+    <%= f.text_field :cedula %>
+  </div>
+
+  <div class="field">
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+
+<div class="field">
+    <%= f.label :sexo %><br>
+    <%= f.select :sexo, ['Masculino' , 'Femenino' ] %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_area :address %>
+  </div>
+
+
+<p id="state_field">
+  <label for="person_city_id">State or Province:</label>
+  <%= f.collection_select :city, City.all, :id, :name, :prompt => "Select a city" %>
+</p>
+
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :mobile %><br>
+    <%= f.text_field :mobile %>
+  </div>
+  <div class="field">
+    <%= f.label :birthdate %><br>
+    <%= f.date_select :birthdate, { :start_year => 1920 } %>
+  </div>
+  <div class="field">
+    <%= f.label :civilstatus %><br>
+    <%= f.select :civilstatus, ['Casado','Soltero','Separado','Union Libre','Viudo'] %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exam_id: 1
+  status: MyString
+  optq01: 1
+  optq02: 1
+  optq03: 1
+  optq04: 1
+  optq05: 1
+  optq06: 1
+  optq07: 1
+  optq08: 1
+  optq09: 1
+  optq10: 1
+  optq11: 1
+  optq12: 1
+  optq13: 1
+  optq14: 1
+  optq15: 1
+  optq16: 1
+
+two:
+  exam_id: 1
+  status: MyString
+  optq01: 1
+  optq02: 1
+  optq03: 1
+  optq04: 1
+  optq05: 1
+  optq06: 1
+  optq07: 1
+  optq08: 1
+  optq09: 1
+  optq10: 1
+  optq11: 1
+  optq12: 1
+  optq13: 1
+  optq14: 1
+  optq15: 1
+  optq16: 1

@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exam_id: 1
+  status: MyString
+  psiq01: 1
+  psiq02: 1
+  psiq03: 1
+  psiq04: 1
+  psiq05: 1
+  psiq06: MyString
+  psiq07: MyString
+  psiq08: MyString
+  psiq09: 1
+  psiq10: MyString
+  psiq11: MyString
+  psiq12: MyString
+  psiq13: 1
+  psiq14: 1
+  psiq15: 1
+  psiq16: 1
+  psiq17: 1
+  psiq18: 1
+  psiq19: 1
+  psiq20: 1
+  psiq21: 1
+
+two:
+  exam_id: 1
+  status: MyString
+  psiq01: 1
+  psiq02: 1
+  psiq03: 1
+  psiq04: 1
+  psiq05: 1
+  psiq06: MyString
+  psiq07: MyString
+  psiq08: MyString
+  psiq09: 1
+  psiq10: MyString
+  psiq11: MyString
+  psiq12: MyString
+  psiq13: 1
+  psiq14: 1
+  psiq15: 1
+  psiq16: 1
+  psiq17: 1
+  psiq18: 1
+  psiq19: 1
+  psiq20: 1
+  psiq21: 1

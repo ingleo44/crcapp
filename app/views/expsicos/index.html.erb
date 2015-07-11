@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Expsicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Exam</th>
+      <th>Status</th>
+      <th>Psiq01</th>
+      <th>Psiq02</th>
+      <th>Psiq03</th>
+      <th>Psiq04</th>
+      <th>Psiq05</th>
+      <th>Psiq06</th>
+      <th>Psiq07</th>
+      <th>Psiq08</th>
+      <th>Psiq09</th>
+      <th>Psiq10</th>
+      <th>Psiq11</th>
+      <th>Psiq12</th>
+      <th>Psiq13</th>
+      <th>Psiq14</th>
+      <th>Psiq15</th>
+      <th>Psiq16</th>
+      <th>Psiq17</th>
+      <th>Psiq18</th>
+      <th>Psiq19</th>
+      <th>Psiq20</th>
+      <th>Psiq21</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expsicos.each do |expsico| %>
+      <tr>
+        <td><%= expsico.exam_id %></td>
+        <td><%= expsico.status %></td>
+        <td><%= expsico.psiq01 %></td>
+        <td><%= expsico.psiq02 %></td>
+        <td><%= expsico.psiq03 %></td>
+        <td><%= expsico.psiq04 %></td>
+        <td><%= expsico.psiq05 %></td>
+        <td><%= expsico.psiq06 %></td>
+        <td><%= expsico.psiq07 %></td>
+        <td><%= expsico.psiq08 %></td>
+        <td><%= expsico.psiq09 %></td>
+        <td><%= expsico.psiq10 %></td>
+        <td><%= expsico.psiq11 %></td>
+        <td><%= expsico.psiq12 %></td>
+        <td><%= expsico.psiq13 %></td>
+        <td><%= expsico.psiq14 %></td>
+        <td><%= expsico.psiq15 %></td>
+        <td><%= expsico.psiq16 %></td>
+        <td><%= expsico.psiq17 %></td>
+        <td><%= expsico.psiq18 %></td>
+        <td><%= expsico.psiq19 %></td>
+        <td><%= expsico.psiq20 %></td>
+        <td><%= expsico.psiq21 %></td>
+        <td><%= link_to 'Show', expsico %></td>
+        <td><%= link_to 'Edit', edit_expsico_path(expsico) %></td>
+        <td><%= link_to 'Destroy', expsico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expsico', new_expsico_path %>

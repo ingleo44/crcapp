@@ -1,0 +1,52 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Cedula:</strong>
+  <%= @paciente.cedula %>
+</p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @paciente.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @paciente.lastname %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @paciente.sexo %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @paciente.address %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @paciente.phone %>
+</p>
+
+<p>
+  <strong>Mobile:</strong>
+  <%= @paciente.mobile %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @paciente.birthdate %>
+</p>
+
+<p>
+  <strong>Civilstatus:</strong>
+  <%= @paciente.civilstatus %>
+</p>
+
+
+
+<%= link_to 'Edit', edit_paciente_path(@paciente) %> |
+<%= link_to 'Back', pacientes_path %>

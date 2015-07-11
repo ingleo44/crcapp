@@ -1,0 +1,302 @@
+<%= form_for([@paciente , @exam , @exmedico]) do |f| %>
+  <% if @exmedico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exmedico.errors.count, "error") %> prohibited this exmedico from being saved:</h2>
+
+      <ul>
+      <% @exmedico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :medAP01 %><br>
+    <%= f.check_box :medAP01 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP02 %><br>
+    <%= f.check_box :medAP02 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP03 %><br>
+    <%= f.check_box :medAP03 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP04 %><br>
+    <%= f.check_box :medAP04 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP05 %><br>
+    <%= f.check_box :medAP05 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP06 %><br>
+    <%= f.check_box :medAP06 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP07 %><br>
+    <%= f.check_box :medAP07 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP08 %><br>
+    <%= f.check_box :medAP08 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP09 %><br>
+    <%= f.check_box :medAP09 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP10 %><br>
+    <%= f.check_box :medAP10 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP11 %><br>
+    <%= f.check_box :medAP11 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP12 %><br>
+    <%= f.check_box :medAP12 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP13 %><br>
+    <%= f.check_box :medAP13 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP14 %><br>
+    <%= f.check_box :medAP14 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP15 %><br>
+    <%= f.check_box :medAP15 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP16 %><br>
+    <%= f.check_box :medAP16 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP17 %><br>
+    <%= f.check_box :medAP17 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAP018 %><br>
+    <%= f.check_box :medAP018 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq01 %><br>
+    <%= f.text_area :medq01 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF01 %><br>
+    <%= f.check_box :medAF01 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF02 %><br>
+    <%= f.check_box :medAF02 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF03 %><br>
+    <%= f.check_box :medAF03 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF04 %><br>
+    <%= f.check_box :medAF04 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF05 %><br>
+    <%= f.check_box :medAF05 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF06 %><br>
+    <%= f.check_box :medAF06 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF07 %><br>
+    <%= f.check_box :medAF07 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF08 %><br>
+    <%= f.check_box :medAF08 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF09 %><br>
+    <%= f.check_box :medAF09 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF10 %><br>
+    <%= f.check_box :medAF10 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF11 %><br>
+    <%= f.check_box :medAF11 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF12 %><br>
+    <%= f.check_box :medAF12 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF13 %><br>
+    <%= f.check_box :medAF13 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF14 %><br>
+    <%= f.check_box :medAF14 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF15 %><br>
+    <%= f.check_box :medAF15 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF16 %><br>
+    <%= f.check_box :medAF16 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF17 %><br>
+    <%= f.check_box :medAF17 %>
+  </div>
+  <div class="field">
+    <%= f.label :medAF018 %><br>
+    <%= f.check_box :medAF018 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq02 %><br>
+    <%= f.text_area :medq02 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq03 %><br>
+    <%= f.number_field :medq03 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq04 %><br>
+    <%= f.number_field :medq04 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq05 %><br>
+    <%= f.number_field :medq05 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq06 %><br>
+    <%= f.number_field :medq06 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq07 %><br>
+    <%= f.number_field :medq07 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq08 %><br>
+    <%= f.number_field :medq08 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq09 %><br>
+    <%= f.number_field :medq09 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq10 %><br>
+    <%= f.date_select :medq10 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq11 %><br>
+    <%= f.date_select :medq11 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq12 %><br>
+    <%= f.text_field :medq12 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq13 %><br>
+    <%= f.text_field :medq13 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq14 %><br>
+    <%= f.text_field :medq14 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq15 %><br>
+    <%= f.text_field :medq15 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq16 %><br>
+    <%= f.text_field :medq16 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq17 %><br>
+    <%= f.text_field :medq17 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq18 %><br>
+    <%= f.text_field :medq18 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq19 %><br>
+    <%= f.text_field :medq19 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq20 %><br>
+    <%= f.text_field :medq20 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq21 %><br>
+    <%= f.number_field :medq21 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq22 %><br>
+    <%= f.text_field :medq22 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq23 %><br>
+    <%= f.number_field :medq23 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq24 %><br>
+    <%= f.number_field :medq24 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq25 %><br>
+    <%= f.number_field :medq25 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq26 %><br>
+    <%= f.text_field :medq26 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq27 %><br>
+    <%= f.text_field :medq27 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq28 %><br>
+    <%= f.text_field :medq28 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq29 %><br>
+    <%= f.text_area :medq29 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq30 %><br>
+    <%= f.date_select :medq30 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq31 %><br>
+    <%= f.text_area :medq31 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq32 %><br>
+    <%= f.date_select :medq32 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq33 %><br>
+    <%= f.text_area :medq33 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq34 %><br>
+    <%= f.text_area :medq34 %>
+  </div>
+  <div class="field">
+    <%= f.label :medq35 %><br>
+    <%= f.text_field :medq35 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

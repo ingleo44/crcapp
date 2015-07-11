@@ -1,0 +1,89 @@
+<%= form_for([@paciente,@exam,@exopto]) do |f| %>
+  <% if @exopto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exopto.errors.count, "error") %> prohibited this exopto from being saved:</h2>
+
+      <ul>
+      <% @exopto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :exam_id %><br>
+    <%= f.number_field :exam_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :optq01 %><br>
+    <%= f.number_field :optq01 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq02 %><br>
+    <%= f.number_field :optq02 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq03 %><br>
+    <%= f.number_field :optq03 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq04 %><br>
+    <%= f.number_field :optq04 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq05 %><br>
+    <%= f.number_field :optq05 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq06 %><br>
+    <%= f.number_field :optq06 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq07 %><br>
+    <%= f.number_field :optq07 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq08 %><br>
+    <%= f.number_field :optq08 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq09 %><br>
+    <%= f.number_field :optq09 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq10 %><br>
+    <%= f.number_field :optq10 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq11 %><br>
+    <%= f.number_field :optq11 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq12 %><br>
+    <%= f.number_field :optq12 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq13 %><br>
+    <%= f.number_field :optq13 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq14 %><br>
+    <%= f.number_field :optq14 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq15 %><br>
+    <%= f.number_field :optq15 %>
+  </div>
+  <div class="field">
+    <%= f.label :optq16 %><br>
+    <%= f.number_field :optq16 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

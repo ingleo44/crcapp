@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Exfonos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Exam</th>
+      <th>Status</th>
+      <th>Fonq01</th>
+      <th>Fonq02</th>
+      <th>Fonq03</th>
+      <th>Fonq04</th>
+      <th>Fonq05</th>
+      <th>Fonq06</th>
+      <th>Fonq07</th>
+      <th>Fonq08</th>
+      <th>Fonq09</th>
+      <th>Fonq10</th>
+      <th>Fonq11</th>
+      <th>Fonq12</th>
+      <th>Fonq13</th>
+      <th>Fonq14</th>
+      <th>Fonq15</th>
+      <th>Fonq16</th>
+      <th>Fonq17</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exfonos.each do |exfono| %>
+      <tr>
+        <td><%= exfono.exam_id %></td>
+        <td><%= exfono.status %></td>
+        <td><%= exfono.fonq01 %></td>
+        <td><%= exfono.fonq02 %></td>
+        <td><%= exfono.fonq03 %></td>
+        <td><%= exfono.fonq04 %></td>
+        <td><%= exfono.fonq05 %></td>
+        <td><%= exfono.fonq06 %></td>
+        <td><%= exfono.fonq07 %></td>
+        <td><%= exfono.fonq08 %></td>
+        <td><%= exfono.fonq09 %></td>
+        <td><%= exfono.fonq10 %></td>
+        <td><%= exfono.fonq11 %></td>
+        <td><%= exfono.fonq12 %></td>
+        <td><%= exfono.fonq13 %></td>
+        <td><%= exfono.fonq14 %></td>
+        <td><%= exfono.fonq15 %></td>
+        <td><%= exfono.fonq16 %></td>
+        <td><%= exfono.fonq17 %></td>
+        <td><%= link_to 'Show', exfono %></td>
+        <td><%= link_to 'Edit', edit_exfono_path(exfono) %></td>
+        <td><%= link_to 'Destroy', exfono, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Exfono', new_exfono_path %>

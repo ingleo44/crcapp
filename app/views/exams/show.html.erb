@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Paciente:</strong>
+  <%= @exam.paciente.name_with_initial %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @exam.date %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @exam.status %>
+</p>
+
+<%= link_to 'Edit', edit_paciente_exam_path(@paciente, @exam) %> |
+<%= link_to 'Back', paciente_exams_path(@paciente) %>

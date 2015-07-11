@@ -1,0 +1,21 @@
+<%= form_for(@ant_patologico) do |f| %>
+  <% if @ant_patologico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ant_patologico.errors.count, "error") %> prohibited this ant_patologico from being saved:</h2>
+
+      <ul>
+      <% @ant_patologico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

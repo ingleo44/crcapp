@@ -1,0 +1,111 @@
+<%= form_for([@paciente,@exam,@expsico]) do |f| %>
+  <% if @expsico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expsico.errors.count, "error") %> prohibited this expsico from being saved:</h2>
+
+      <ul>
+      <% @expsico.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<p><div class = "subheader_text">Tiempo de Reaccion Multiple acelerado y frenado</div></p>
+
+  <div class="field">
+      <p> <%= f.label "Acelerado y frenado - Tiempo medio de Respuesta" ,:class=>'description_text'%> </p>
+    <%= f.label "Aceptaciòn - 0 a 43", :class=> 'normal_text' %><br>
+    <%= f.number_field :psiq01 %>
+  </div>
+  <div class="field">
+   <p> <%= f.label "Reacciones Multiples - Tiempo medio de Respuesta" ,:class=>'description_text'%> </p>
+    <%= f.label "Aceptaciòn - 0 a 164", :class=> 'normal_text' %><br>
+    <%= f.number_field :psiq02 %>
+  </div>
+<p><div class = "subheader_text">Resistencia a la monotonìa</div></p>
+  <div class="field">
+    <%= f.label :psiq03 %><br>
+    <%= f.number_field :psiq03 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq04 %><br>
+    <%= f.number_field :psiq04 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq05 %><br>
+    <%= f.number_field :psiq05 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq06 %><br>
+    <%= f.text_field :psiq06 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq07 %><br>
+    <%= f.text_field :psiq07 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq08 %><br>
+    <%= f.text_field :psiq08 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq09 %><br>
+    <%= f.number_field :psiq09 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq10 %><br>
+    <%= f.text_field :psiq10 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq11 %><br>
+    <%= f.text_field :psiq11 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq12 %><br>
+    <%= f.text_field :psiq12 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq13 %><br>
+    <%= f.number_field :psiq13 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq14 %><br>
+    <%= f.number_field :psiq14 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq15 %><br>
+    <%= f.number_field :psiq15 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq16 %><br>
+    <%= f.number_field :psiq16 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq17 %><br>
+    <%= f.number_field :psiq17 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq18 %><br>
+    <%= f.number_field :psiq18 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq19 %><br>
+    <%= f.number_field :psiq19 %>
+  </div>
+  <div class="field">
+    <%= f.label :psiq20 %><br>
+    <%= f.number_field :psiq20 %>
+  </div>
+  <div class="field">
+<%= f.label "Aprobacion" %><br>    
+ <%= f.radio_button :psiq21, '1', :checked => true %> 
+  <%= label :aprobacion_aprobado, 'Aprobado' %>
+  <%= f.radio_button :psiq21, '2' %>
+  <%= label :aprobacion_desaprobado, 'Desaprobado' %>
+      
+
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

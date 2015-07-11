@@ -1,0 +1,93 @@
+<%= form_for([@paciente,@exam,@exfono]) do |f| %>
+  <% if @exfono.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exfono.errors.count, "error") %> prohibited this exfono from being saved:</h2>
+
+      <ul>
+      <% @exfono.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :exam_id %><br>
+    <%= f.number_field :exam_id %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq01 %><br>
+    <%= f.number_field :fonq01 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq02 %><br>
+    <%= f.number_field :fonq02 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq03 %><br>
+    <%= f.number_field :fonq03 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq04 %><br>
+    <%= f.number_field :fonq04 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq05 %><br>
+    <%= f.number_field :fonq05 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq06 %><br>
+    <%= f.number_field :fonq06 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq07 %><br>
+    <%= f.number_field :fonq07 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq08 %><br>
+    <%= f.number_field :fonq08 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq09 %><br>
+    <%= f.number_field :fonq09 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq10 %><br>
+    <%= f.number_field :fonq10 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq11 %><br>
+    <%= f.number_field :fonq11 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq12 %><br>
+    <%= f.number_field :fonq12 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq13 %><br>
+    <%= f.number_field :fonq13 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq14 %><br>
+    <%= f.number_field :fonq14 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq15 %><br>
+    <%= f.number_field :fonq15 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq16 %><br>
+    <%= f.number_field :fonq16 %>
+  </div>
+  <div class="field">
+    <%= f.label :fonq17 %><br>
+    <%= f.number_field :fonq17 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

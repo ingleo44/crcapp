@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Pacientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cedula</th>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Sexo</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Mobile</th>
+      <th>Birthdate</th>
+      <th>Civilstatus</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pacientes.each do |paciente| %>
+      <tr>
+        <td><%= paciente.cedula %></td>
+        <td><%= paciente.firstname %></td>
+        <td><%= paciente.lastname %></td>
+        <td><%= paciente.sexo %></td>
+        <td><%= paciente.address %></td>
+        <td><%= paciente.phone %></td>
+        <td><%= paciente.mobile %></td>
+        <td><%= paciente.birthdate %></td>
+        <td><%= paciente.civilstatus %></td>
+    
+        <td><%= link_to 'Show', paciente %></td>
+        <td><%= link_to 'Edit', edit_paciente_path(paciente) %></td>
+        <td><%= link_to 'Destroy', paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'View Exams', paciente_exams_path(paciente) %></td>        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Paciente', new_paciente_path %>

@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  exam_id: 1
+  status: MyString
+  fonq01: 1
+  fonq02: 1
+  fonq03: 1
+  fonq04: 1
+  fonq05: 1
+  fonq06: 1
+  fonq07: 1
+  fonq08: 1
+  fonq09: 1
+  fonq10: 1
+  fonq11: 1
+  fonq12: 1
+  fonq13: 1
+  fonq14: 1
+  fonq15: 1
+  fonq16: 1
+  fonq17: 1
+
+two:
+  exam_id: 1
+  status: MyString
+  fonq01: 1
+  fonq02: 1
+  fonq03: 1
+  fonq04: 1
+  fonq05: 1
+  fonq06: 1
+  fonq07: 1
+  fonq08: 1
+  fonq09: 1
+  fonq10: 1
+  fonq11: 1
+  fonq12: 1
+  fonq13: 1
+  fonq14: 1
+  fonq15: 1
+  fonq16: 1
+  fonq17: 1

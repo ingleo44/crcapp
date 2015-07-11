@@ -1,0 +1,169 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Exmedicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Exam</th>
+      <th>Medap01</th>
+      <th>Medap02</th>
+      <th>Medap03</th>
+      <th>Medap04</th>
+      <th>Medap05</th>
+      <th>Medap06</th>
+      <th>Medap07</th>
+      <th>Medap08</th>
+      <th>Medap09</th>
+      <th>Medap10</th>
+      <th>Medap11</th>
+      <th>Medap12</th>
+      <th>Medap13</th>
+      <th>Medap14</th>
+      <th>Medap15</th>
+      <th>Medap16</th>
+      <th>Medap17</th>
+      <th>Medap018</th>
+      <th>Medq01</th>
+      <th>Medaf01</th>
+      <th>Medaf02</th>
+      <th>Medaf03</th>
+      <th>Medaf04</th>
+      <th>Medaf05</th>
+      <th>Medaf06</th>
+      <th>Medaf07</th>
+      <th>Medaf08</th>
+      <th>Medaf09</th>
+      <th>Medaf10</th>
+      <th>Medaf11</th>
+      <th>Medaf12</th>
+      <th>Medaf13</th>
+      <th>Medaf14</th>
+      <th>Medaf15</th>
+      <th>Medaf16</th>
+      <th>Medaf17</th>
+      <th>Medaf018</th>
+      <th>Medq02</th>
+      <th>Medq03</th>
+      <th>Medq04</th>
+      <th>Medq05</th>
+      <th>Medq06</th>
+      <th>Medq07</th>
+      <th>Medq08</th>
+      <th>Medq09</th>
+      <th>Medq10</th>
+      <th>Medq11</th>
+      <th>Medq12</th>
+      <th>Medq13</th>
+      <th>Medq14</th>
+      <th>Medq15</th>
+      <th>Medq16</th>
+      <th>Medq17</th>
+      <th>Medq18</th>
+      <th>Medq19</th>
+      <th>Medq20</th>
+      <th>Medq21</th>
+      <th>Medq22</th>
+      <th>Medq23</th>
+      <th>Medq24</th>
+      <th>Medq25</th>
+      <th>Medq26</th>
+      <th>Medq27</th>
+      <th>Medq28</th>
+      <th>Medq29</th>
+      <th>Medq30</th>
+      <th>Medq31</th>
+      <th>Medq32</th>
+      <th>Medq33</th>
+      <th>Medq34</th>
+      <th>Medq35</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exmedicos.each do |exmedico| %>
+      <tr>
+        <td><%= exmedico.exam_id %></td>
+        <td><%= exmedico.medAP01 %></td>
+        <td><%= exmedico.medAP02 %></td>
+        <td><%= exmedico.medAP03 %></td>
+        <td><%= exmedico.medAP04 %></td>
+        <td><%= exmedico.medAP05 %></td>
+        <td><%= exmedico.medAP06 %></td>
+        <td><%= exmedico.medAP07 %></td>
+        <td><%= exmedico.medAP08 %></td>
+        <td><%= exmedico.medAP09 %></td>
+        <td><%= exmedico.medAP10 %></td>
+        <td><%= exmedico.medAP11 %></td>
+        <td><%= exmedico.medAP12 %></td>
+        <td><%= exmedico.medAP13 %></td>
+        <td><%= exmedico.medAP14 %></td>
+        <td><%= exmedico.medAP15 %></td>
+        <td><%= exmedico.medAP16 %></td>
+        <td><%= exmedico.medAP17 %></td>
+        <td><%= exmedico.medAP018 %></td>
+        <td><%= exmedico.medq01 %></td>
+        <td><%= exmedico.medAF01 %></td>
+        <td><%= exmedico.medAF02 %></td>
+        <td><%= exmedico.medAF03 %></td>
+        <td><%= exmedico.medAF04 %></td>
+        <td><%= exmedico.medAF05 %></td>
+        <td><%= exmedico.medAF06 %></td>
+        <td><%= exmedico.medAF07 %></td>
+        <td><%= exmedico.medAF08 %></td>
+        <td><%= exmedico.medAF09 %></td>
+        <td><%= exmedico.medAF10 %></td>
+        <td><%= exmedico.medAF11 %></td>
+        <td><%= exmedico.medAF12 %></td>
+        <td><%= exmedico.medAF13 %></td>
+        <td><%= exmedico.medAF14 %></td>
+        <td><%= exmedico.medAF15 %></td>
+        <td><%= exmedico.medAF16 %></td>
+        <td><%= exmedico.medAF17 %></td>
+        <td><%= exmedico.medAF018 %></td>
+        <td><%= exmedico.medq02 %></td>
+        <td><%= exmedico.medq03 %></td>
+        <td><%= exmedico.medq04 %></td>
+        <td><%= exmedico.medq05 %></td>
+        <td><%= exmedico.medq06 %></td>
+        <td><%= exmedico.medq07 %></td>
+        <td><%= exmedico.medq08 %></td>
+        <td><%= exmedico.medq09 %></td>
+        <td><%= exmedico.medq10 %></td>
+        <td><%= exmedico.medq11 %></td>
+        <td><%= exmedico.medq12 %></td>
+        <td><%= exmedico.medq13 %></td>
+        <td><%= exmedico.medq14 %></td>
+        <td><%= exmedico.medq15 %></td>
+        <td><%= exmedico.medq16 %></td>
+        <td><%= exmedico.medq17 %></td>
+        <td><%= exmedico.medq18 %></td>
+        <td><%= exmedico.medq19 %></td>
+        <td><%= exmedico.medq20 %></td>
+        <td><%= exmedico.medq21 %></td>
+        <td><%= exmedico.medq22 %></td>
+        <td><%= exmedico.medq23 %></td>
+        <td><%= exmedico.medq24 %></td>
+        <td><%= exmedico.medq25 %></td>
+        <td><%= exmedico.medq26 %></td>
+        <td><%= exmedico.medq27 %></td>
+        <td><%= exmedico.medq28 %></td>
+        <td><%= exmedico.medq29 %></td>
+        <td><%= exmedico.medq30 %></td>
+        <td><%= exmedico.medq31 %></td>
+        <td><%= exmedico.medq32 %></td>
+        <td><%= exmedico.medq33 %></td>
+        <td><%= exmedico.medq34 %></td>
+        <td><%= exmedico.medq35 %></td>
+        <td><%= link_to 'Show', exmedico %></td>
+        <td><%= link_to 'Edit', edit_exmedico_path(exmedico) %></td>
+        <td><%= link_to 'Destroy', exmedico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
